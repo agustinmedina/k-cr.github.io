@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+li {
+    list-style: none;
+}
+
+i {
+    padding: 5px;
+}
+
+#nav-title {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.mat-card {
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px 10px;
+    padding: 0px;
+    width: 85%;
+}
+
+#info-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+#card-about > img {
+    width: 100%;
+    display: flex;
+}
+
+#img-about {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-left: -10px;
+    margin-top: -110px;
+    z-index: 1;
+    box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
+}
+
+#info {
+    padding: 35px;
+}
+
+#info-action {
+    display: flex;
+}
+
+#info-details {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+#info-details > li {
+    list-style: none;
+}
+
+#info-details li a {
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+
+#info-details li a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+#info-details li a h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+.title { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+.progress .progress-bar {
+    border-radius: 10px;
+}

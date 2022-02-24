@@ -1,0 +1,53 @@
+{
+    "name": "Cristian Ramos",
+    "bannerImage": "https://i.pinimg.com/originals/d5/e7/87/d5e78748a833f904c59e030401ae2325.jpg",
+    "profilePicture": "https://i.pinimg.com/550x/d8/da/b3/d8dab349862cf5397b90379cc0bcb8b5.jpg",
+    "ocupation": "Estudiante UNPA",
+    "ubication": "Río Gallegos, Argentina",
+    "company": {
+        "name": "Universidad Nacional de la Patagonia Austral",
+        "url": "#",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_oficial_UNPA.jpg"
+    },
+    "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum.",
+    "education": [{
+        "degree": "Bachiller en Economía y Administración",
+        "school": "Colegio Provincial de Educación Secundaria N°23",
+        "period": "Marzo 2012 - Diciembre 2017",
+        "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+    },
+    {
+        "degree": "Licenciatura en Sistemas",
+        "school": "Universidad Nacional de la Patagonia Austral",
+        "period": "2018 - PRESENTE",
+        "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+    }
+    ],
+    "experience": [{
+        "ocupation": "Administrador de Finanzas",
+        "place": "Pastas Anita",
+        "period": "Agosto 2020 - Febrero 2021",
+        "description": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
+    }
+    ],
+    "hardskills": [{
+
+    }],
+    "softskills": [{
+            "name": "Trabajo en equipo"
+        },
+        {
+            "name": "Aprendizaje práctico"
+        },
+        {
+            "name": "Re piola el pibe"
+        }
+    ],
+    "projects": [{
+        "name": "Proyecto Portfolio: Argentina Programa",
+        "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
+        "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
+        "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP"
+    }
+    ]
+}

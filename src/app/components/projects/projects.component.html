@@ -1,0 +1,70 @@
+  <!-- Proyectos -->
+  <div class="card mat-card mx-auto" id="projects">
+    <div id="info">
+        <div class="title mb-1">
+            <h3>Proyectos</h3>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <!-- Elemento Proyecto -->
+            
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <li *ngFor="let projects of projectList">
+                <div class="card">
+                    <img src="assets/img/Proyecto1.png" class="card-img-top" alt="ImagenProyecto">
+                    <div class="card-body">
+                      <h5 class="card-title justify-content-between">{{projects.name}} <a href="#" data-bs-toggle="modal" data-bs-target="#editproject"><i class="fa-solid fa-pen-to-square"></i></a><i class="fa-regular fa-square-minus"></i></h5>
+                      <p class="card-text">{{projects.description}}</p>
+                      <a href="{{projects.linkLiveDemo}}" class="btn btn-primary mb-1 ms-2">Live Demo</a>
+                      <a href="{{projects.linkSourceCode}}" class="btn btn-secondary mb-1 ms-2">Source code</a>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Menú de edición -->
+                <div class="modal fade" id="editproject" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modificar proyecto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="nameImput" class="form-label">Nombre del proyecto</label>
+                            <input class="form-control" type="text" placeholder="Escriba el nombre del proyecto" aria-label="Escriba el nombre del proyecto">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Descripción del proyecto realizado</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="nameImput" class="form-label">URL de la vista previa</label>
+                            <input class="form-control" type="text" placeholder="Escriba URL de la vista previa" aria-label="Escriba URL de la vista previa">
+                          </div>
+                          <div class="mb-3">
+                            <label for="nameImput" class="form-label">URL del código fuente</label>
+                            <input class="form-control" type="text" placeholder="Escriba URL del código fuente" aria-label="Escriba URL del código fuente">
+                          </div>
+                          <div class="mb-3">
+                              <label for="formFile" class="form-label">Foto del proyecto</label>
+                              <input class="form-control" type="file" id="formFile">
+                          </div>
+                          <br>
+                          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <!-- END Elemento Proyecto -->
+        </div>
+    </div>
+</div>
+<!-- END Proyectos -->

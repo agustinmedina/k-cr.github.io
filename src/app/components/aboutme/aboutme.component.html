@@ -1,0 +1,35 @@
+ <!-- About -->
+ <div class="card mat-card mx-auto" id="aboutme">
+    <div id="info">
+        <div class="title mb-1">
+            <h3>Acerca de...</h3>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#editaboutme"><i class="fa-solid fa-pen-to-square"></i></a>
+
+            <div class="modal fade" id="editaboutme" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Editar "sobre mí"</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Editar "sobre mí". Puede añadir todas sus experiencias y todo lo relacionado sobre usted.</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        </div>
+        <p>{{myPortfolio.about}}</p>
+    </div>
+</div>
+<!-- END about-->

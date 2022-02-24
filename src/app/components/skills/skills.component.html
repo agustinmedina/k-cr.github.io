@@ -1,0 +1,91 @@
+  <!-- Skills -->
+  <div class="card mat-card mx-auto" id="skills">
+    <div id="info">
+        <div class="row align-item-center">
+            <div class="col-md-7">
+                <div class="title mb-1">
+                    <h3>Hard Skills</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <!-- Elemento -->
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-width-bold">HTML</h6>
+                        <h6 class="font-width-bold"><i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h6>    
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                    </div>
+                </div>                
+                <!-- END Elemento-->
+                <!-- Elemento -->
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-width-bold">CSSL</h6>
+                        <h6 class="font-width-bold"><i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h6>    
+                    </div>                
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                    </div>
+                </div>                
+                <!-- END Elemento-->
+                <!-- Elemento -->
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-width-bold">Bootstrap</h6>
+                        <h6 class="font-width-bold"><i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h6>    
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                    </div>
+                </div>                
+                <!-- END Elemento-->
+            </div>
+
+            <div class="col-md-5">
+                <div class="title mb-1">
+                    <h3>Soft Skills</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <!-- SoftSkills-->
+                <li *ngFor="let softskill of mySoftskills">
+                    <div class="btn-group dropend mb-2 ms-2">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{softskill.name}}
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editsoftskill">Editar</a></li>
+                          <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <div class="modal fade" id="editsoftskill" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Editar softskill</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                            <label for="nameImput" class="form-label">Escriba la softskill</label>
+                            <input class="form-control" type="text" placeholder="Escriba la softskill" aria-label="Escriba la softskill">
+                          </div>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- END Skills-->

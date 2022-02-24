@@ -1,0 +1,89 @@
+<!-- Profile -->
+<div class="card mat-card mx-auto" id="card-about">
+    <img class="card-img-top" src="https://i.pinimg.com/originals/d5/e7/87/d5e78748a833f904c59e030401ae2325.jpg" alt="Card image cap">
+    <div id="info">
+        <div class="info-about">
+            <div class="img-about mb-3">
+                <img src="https://i.pinimg.com/550x/d8/da/b3/d8dab349862cf5397b90379cc0bcb8b5.jpg" alt="ProfilePicture" id="img-about">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#editmenu"><i class="fa-solid fa-pen-to-square"></i></a>
+
+                <!-- Menú de edición -->
+                <div class="modal fade" id="editmenu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Modificar perfil</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="nameImput" class="form-label">Nombre</label>
+                              <input class="form-control" type="text" placeholder="Escriba su nombre" aria-label="Escriba su nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nameImput" class="form-label">Apellido</label>
+                                <input class="form-control" type="text" placeholder="Escriba su apellido" aria-label="Escriba su apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nameImput" class="form-label">Ocupación</label>
+                                <input class="form-control" type="text" placeholder="Escriba su ocupación" aria-label="Escriba su ocupación">
+                              </div>
+                            <div class="mb-3">
+                                <label for="nameImput" class="form-label">Ubicación</label>
+                                <input class="form-control" type="text" placeholder="Escriba su cuidad, provincia, país" aria-label="Escriba su cuidad, provincia, país">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Editar foto de banner</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Editar foto de Perfil</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+            
+            <div class="mb-3" id="info-data">
+                <div>
+                    <h2>{{myPortfolio.name}}</h2>
+                    <div id="info-company">{{myPortfolio.ocupation}}</div>
+                    <div id="info-contact">
+                        <span>{{myPortfolio.ubication}}</span>
+                    </div>
+                </div>
+                <ul id="info-details">
+                    <li>        
+                        <a href="{{myPortfolio.company.url}}" style="text-decoration: none;">
+                            <img src="{{myPortfolio.company.logo}}" alt="LogoUnpa" class="logo-unpa">
+                            <h5>{{myPortfolio.company.name}}</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="info-action">
+                <a href="#" class="btn btn-primary">Intereses: </a>
+                <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Añadir sección: </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
+                    <li><a class="dropdown-item" href="#">Añadir <strong>Cursos</strong></a></li>
+                    <li><a class="dropdown-item" href="#">Añadir <strong>Pasantías</strong></a></li>
+                </ul>
+                <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Más: </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
+                    <li><a class="dropdown-item" href="#">Compartir perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Descargar en PDF</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Profile-->
